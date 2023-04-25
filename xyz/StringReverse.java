@@ -6,10 +6,16 @@ public class StringReverse {
 		
 		String str = "Emirates Airlines";
 		
-		StringBuilder sb = new StringBuilder(str);
+		String revStr ="";
 		
-		String str1 = sb.reverse().toString();
-		System.out.println(str1);
+		for(int i=str.length()-1;i>=0;i--) {
+			revStr =revStr+str.charAt(i);
+		}
+		
+		System.out.println(str);
+		System.out.println();
+		System.out.println(revStr);
+		
 
 	}
 
